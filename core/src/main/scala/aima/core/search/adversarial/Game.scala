@@ -5,10 +5,10 @@ final case class UtilityValue(value: Double) extends AnyVal
 /**
   * @author Aditya Lahiri
   */
-trait Game[Player, State, Action] {
-  def initialState: State
-  def getPlayer(state: State): Player
-  def getActions(state: State): List[Action]
-  def result(state: State, action: Action): State
-  def getUtility(state: State, player: Player): UtilityValue
+trait Game[PLAYER, STATE, ACTION] {
+  def initialState: STATE
+  def getPlayer(state: STATE): PLAYER
+  def getActions(state: STATE): List[ACTION]
+  def result(state: STATE, action: ACTION): STATE
+  def getUtility(state: STATE, player: PLAYER): UtilityValue
 }
