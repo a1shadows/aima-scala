@@ -54,5 +54,4 @@ object TwoPlyGame extends Game[MinimaxPlayer, MinimaxState, MinimaxAction] {
     case 11 => UtilityValue(5)
     case 12 => UtilityValue(2)
   }
-
 }
